@@ -7,6 +7,7 @@ import { HelloComponent } from './hello.component';
 import { ThayllaComponent } from './thaylla/thaylla.component';
 import { RouterModule } from '@angular/router';
 import { ThayllaListaComponent } from './thaylla-lista/thaylla-lista.component';
+import { ThayllaDisciplinasService } from './thaylla-disciplinas.service';
 
 @NgModule({
   imports:      [ 
@@ -23,6 +24,9 @@ import { ThayllaListaComponent } from './thaylla-lista/thaylla-lista.component';
     ThayllaComponent,
     ThayllaListaComponent
   ],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent ],
+  providers: [
+    ThayllaDisciplinasService
+  ]
 })
 export class AppModule { }
