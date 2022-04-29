@@ -6,19 +6,22 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { ThayllaComponent } from './thaylla/thaylla.component';
 import { RouterModule } from '@angular/router';
+import { ThayllaListaComponent } from './thaylla-lista/thaylla-lista.component';
 
 @NgModule({
   imports:      [ 
     BrowserModule, 
     FormsModule,
     RouterModule.forRoot([
-      {path: "thaylla", component: ThayllaComponent}
+      {path: "thaylla", component: ThayllaComponent},
+      {path: "lista-disciplinas", component: ThayllaListaComponent}
     ]) 
   ],
   declarations: [ 
     AppComponent, 
     HelloComponent,
-    ThayllaComponent
+    ThayllaComponent,
+    ThayllaListaComponent
   ],
   bootstrap:    [ AppComponent ]
 })
