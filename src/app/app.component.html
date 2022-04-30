@@ -1,7 +1,17 @@
-<h1> Refazendo A1 </h1>
-<a [routerLink]="['/']"> Home </a> |
-<a [routerLink]="['/thaylla']"> Thaylla </a> |
-<a [routerLink]="['/lista-disciplinas']"> Disciplinas </a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<div class="container-fluid">
+  <a class="navbar-brand" href="#"> Menu </a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-link active" aria-current="page" [routerLink]="['/']">Home</a>
+      <a class="nav-link" [routerLink]="['/thaylla']"> Thaylla </a>
+      <a class="nav-link" [routerLink]="['/lista-disciplinas']"> Disciplinas </a>
+    </div>
+  </div>
+</div>
+</nav>
 
-<hr/>
 <router-outlet></router-outlet>
