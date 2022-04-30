@@ -7,7 +7,7 @@
   <th> Dia da Semana </th>
   <th> Horário </th>
 </tr>
-<tr *ngFor="let item of lista, index as i">
+<tr *ngFor="let disciplina of lista.getLista(); index as i">
   <td> {{ disciplina.id }} </td>
   <td> {{ disciplina.name }} </td>
   <td> {{ disciplina.day }} </td>
