@@ -19,7 +19,7 @@ import { HomeComponent } from './home/home.component';
       {path: "", component: HomeComponent},
       {path: "thaylla", component: ThayllaComponent},
       {path: "lista-disciplinas", component: ThayllaListaComponent},
-      {path: "lista-destalhes/:index", component: ThayllaDetalhesComponent}
+      {path: "destalhes/:index", component: ThayllaDetalhesComponent}
     ]) 
   ],
   declarations: [ 
