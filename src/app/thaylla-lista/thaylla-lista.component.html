@@ -31,15 +31,14 @@ Término: <input type="time" class="form-control" #hour /><br>
 <input type="text" class="form-control" id="autoSizingInputGroup"
   placeholder="Ementa da disciplina" #ement/>
 <br>
-</form><br>
+</form>
 
 <button
 (click)="lista.addDisciplina(id.value, name.value, day.value, hour.value, ement.value);
   id.value = ''; name.value = ''; day.selectedIndex = 0;
   hour.value = ''; ement.value = ''; ">
 Adicionar
-</button>
-<br> <br>
+</button><br> <br>
 
 <table class="table">
 <tr>
