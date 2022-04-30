@@ -8,10 +8,10 @@
   <th> Horário </th>
 </tr>
 <tr *ngFor="let item of lista, index as i">
-  <td> {{.id}} </td>
-  <td> {{item.name}} </td>
-  <td> {{item.day}} </td>
-  <td> {{item.hour}} </td>
+  <td> {{ disciplina.id }} </td>
+  <td> {{ disciplina.name }} </td>
+  <td> {{ disciplina.day }} </td>
+  <td> {{ disciplina.hour }} </td>
   <td>
     <a [routerLink]="['/lista-detalhes', i]"> Detalhes </a>
   </td>
