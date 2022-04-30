@@ -1,1 +1,37 @@
 <h2> Minhas Disciplinas </h2>
+
+<table class="table">
+<tr>
+  <th> Id </th>
+  <th> Nome </th>
+  <th> Dia da Semana </th>
+  <th> Horário </th>
+</tr>
+<tr *ngFor="let item of list, index as i">
+  <td> 
+    <a [routerLink]="['/lista', i]"> 
+      {{item.id}} 
+    </a>
+  </td>
+  <td> 
+    <a> 
+      {{item.name}} 
+    </a>
+  </td>
+  <td> 
+    <a> 
+      {{item.day}} 
+    </a>
+  </td>
+  <td> 
+    <a> 
+      {{item.hour}} 
+    </a>
+  </td>
+  <td>
+    <a>
+      {{item.ement}}
+    </a>
+  </td>
+</tr>
+</table>
