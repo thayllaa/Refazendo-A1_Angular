@@ -1,5 +1,47 @@
 <h2> Minhas Disciplinas </h2>
 
+<form>
+<label> Dia da Semana: </label>
+<select #day>
+  <option value="Segunda-feira">Segunda-feira</option>
+  <option value="Terça-feira">Terça-feira</option>
+  <option value="Quarta-feira">Quarta-feira</option>
+  <option value="Quinta-feira">Quinta-feira</option>
+  <option value="Sexta-feira">Sexta-feira</option>
+  <option value="Sábado">Sábado</option>
+</select>
+
+<br>
+
+<label> ID: </label>
+<input type="text" class="form-control" id="autoSizingInputGroup"
+  placeholder="Id da disciplina" #id/>
+<br>
+
+<label> Nome: </label>
+<input type="text" class="form-control" id="autoSizingInputGroup"
+  placeholder="Nome da disciplina" #name/>
+<br>
+
+<label> Horário </label><br>
+Início: <input type="time" class="form-control" #hour />
+Término: <input type="time" class="form-control" #hour /><br>
+
+<label> Ementa: </label>
+<input type="text" class="form-control" id="autoSizingInputGroup"
+  placeholder="Ementa da disciplina" #ement/>
+<br>
+</form><br>
+
+<button
+(click)="lista.addDisciplina(id.value, name.value, day.value, hour.value, ement.value);
+  id.value = ''; name.value = ''; day.selectedIndex = 0;
+  hour.value = ''; ement.value = ''; ">
+Adicionar
+</button>
+<br> <br>
+
+
 <table class="table">
 <tr>
   <th> Id </th>
