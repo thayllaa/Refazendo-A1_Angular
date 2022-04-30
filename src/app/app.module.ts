@@ -8,6 +8,7 @@ import { ThayllaComponent } from './thaylla/thaylla.component';
 import { RouterModule } from '@angular/router';
 import { ThayllaListaComponent } from './thaylla-lista/thaylla-lista.component';
 import { ThayllaDisciplinasService } from './thaylla-disciplinas.service';
+import { ThayllaDetalhesComponent } from './thaylla-detalhes/thaylla-detalhes.component';
 
 @NgModule({
   imports:      [ 
@@ -15,14 +16,16 @@ import { ThayllaDisciplinasService } from './thaylla-disciplinas.service';
     FormsModule,
     RouterModule.forRoot([
       {path: "thaylla", component: ThayllaComponent},
-      {path: "lista-disciplinas", component: ThayllaListaComponent}
+      {path: "lista-disciplinas", component: ThayllaListaComponent},
+      {path: "lista-destalhes/:index", component: ThayllaDetalhesComponent}
     ]) 
   ],
   declarations: [ 
     AppComponent, 
     HelloComponent,
     ThayllaComponent,
-    ThayllaListaComponent
+    ThayllaListaComponent,
+    ThayllaDetalhesComponent
   ],
   bootstrap:    [ AppComponent ],
   providers: [

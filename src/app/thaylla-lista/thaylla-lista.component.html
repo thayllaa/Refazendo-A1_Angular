@@ -7,7 +7,7 @@
   <th> Dia da Semana </th>
   <th> Horário </th>
 </tr>
-<tr *ngFor="let item of list, index as i">
+<tr *ngFor="let item of lista, index as i">
   <td> 
     <a [routerLink]="['/lista', i]"> 
       {{item.id}} 
